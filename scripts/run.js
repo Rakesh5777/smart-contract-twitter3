@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const mainTest = async () => {
     const [owner, randomPerson] = await hre.ethers.getSigners();
     const twi3ContractFactory = await hre.ethers.getContractFactory('Twitter3');
@@ -5,7 +7,7 @@ const mainTest = async () => {
         value: hre.ethers.utils.parseEther('10'),
     });
     await twi3Contract.deployed();
-    console.log("Contract deployed to:", twi3Contract.address);
+    console.log(process.env.TEMP, twi3Contract.address);
     console.log("Contract deployed by:", owner.address);
 
     await getCurrentContractBalence(twi3Contract);
