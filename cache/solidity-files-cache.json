@@ -74,8 +74,8 @@
       ]
     },
     "/home/rakesh/smart-contract-twitter3/contracts/twitter3.sol": {
-      "lastModificationDate": 1639328179778,
-      "contentHash": "62c30f432a9a8b9c86a34075b2f7e141",
+      "lastModificationDate": 1639343657366,
+      "contentHash": "e899eb720661c51f65d2bbd3df7fb4de",
       "sourceName": "contracts/twitter3.sol",
       "solcConfig": {
         "version": "0.8.0",

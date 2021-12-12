@@ -29,8 +29,8 @@ contract Twitter3 {
 
     function tweet(string memory tweetToSaveInBlockChain) public {
         require(
-            lastTweetedAt[msg.sender] + 5 minutes < block.timestamp,
-            "Wait 5 Mints to Tweet again , let ether nodes to cool down ;)"
+            lastTweetedAt[msg.sender] + 1 minutes < block.timestamp,
+            "Wait 1 Mints to Tweet again , let ether nodes to cool down ;)"
         );
 
         lastTweetedAt[msg.sender] = block.timestamp;
